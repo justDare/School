@@ -7,3 +7,5 @@
 ## CreateShapes.java
 * driver class
 * instantiates objects and performs basic calculations
+
+*Used for the purpose of COMP 1231 at [Thompson River University](https://www.tru.ca/)*
