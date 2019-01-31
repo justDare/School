@@ -13,3 +13,4 @@
 * matrice sizes declared as variables in the MatrixMultiply.java file can be changed, as long as matrix multiplication properties are met, the code will handle various sized matrices
 
 * initial size is set to 3x3
+*Used for the purpose of COMP 3411 at [Thompson River University](https://www.tru.ca/)*
