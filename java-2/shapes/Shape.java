@@ -7,7 +7,7 @@
 
 
 
-//creates an initial 3d shape with some variables and methods to be used by each child class
+// creates an initial 3d shape with some variables and methods to be used by each child class
 public class Shape
 {
 
