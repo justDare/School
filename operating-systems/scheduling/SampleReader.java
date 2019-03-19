@@ -63,7 +63,7 @@ public class SampleReader
 	public static void main(String args[])
 	{
 		System.out.print("Sample File?  ");
-		String sampleFile = SavitchIn.readLineWord();
+		String sampleFile = KeyboardIn.readLineWord();
 		
 		SampleReader sr = new SampleReader(sampleFile);
 		

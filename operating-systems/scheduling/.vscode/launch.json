@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SJFsample",
+            "request": "launch",
+            "mainClass": "SJFsample",
+            "projectName": "scheduling_8df12"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SampleReader",
+            "request": "launch",
+            "mainClass": "SampleReader",
+            "projectName": "scheduling_8df12"
+        }
+    ]
+}

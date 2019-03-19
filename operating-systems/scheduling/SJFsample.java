@@ -1,7 +1,6 @@
-public class SampleReaderTest
-{
-	public static void main(String args[])
-	{
+public class SJFsample {
+	public static void main(String args[]) {
+
 		PriorityQueue readyQ = new PriorityQueue();
 		ProcessControlBlock pcb;
 		SampleReader sr;
@@ -10,7 +9,28 @@ public class SampleReaderTest
 
 		System.out.print("Sample File?  ");
 		sampleFile = KeyboardIn.readLineWord();
-		sr = new SampleReader(sampleFile);
+        sr = new SampleReader(sampleFile);
+        
+        int [] completions = new int[readyQ.noItems];
+        int [] turnAround = new int[readyQ.noItems];
+        int [] waitTime = new int[readyQ.noItems];
+
+        // counters for minutes 
+        int oneMinute = 0;
+        int minuteCounter = 0;
+
+        // counters for intervals -> to compute averages
+        int totalTurnAround = 0;
+        int totalWait = 0;
+        int processCount = 0;
+
+        // flags
+        boolean startOneMinute = false;
+
+        int processNum;
+        int processArrival;
+        int processPriority;
+        int processBurst;
 
 		while(true) {
 			
@@ -35,9 +55,11 @@ public class SampleReaderTest
 			pcb = new ProcessControlBlock(process, arrival, priority, burst);
 			readyQ.putQueue(pcb, burst);
 				
-//			System.out.println(process + "  " + arrival + "  " + priority + "  " + burst);
+
 		}
 
+		System.out.println(readyQ.head.getNext().key); 
+		System.out.println("---------------------------------");
 		while(!readyQ.isEmpty()) {
 			System.out.println(readyQ.getHighestPriority());  // print the highest priority without getting the queue item
 			pcb = (ProcessControlBlock)readyQ.getQueue();

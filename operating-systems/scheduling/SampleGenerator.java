@@ -8,17 +8,17 @@ public class SampleGenerator
 		Random r = new Random();
 		
 		System.out.print("Minimum Priority?  ");
-		int MIN_PRIORITY = SavitchIn.readLineInt();
+		int MIN_PRIORITY = KeyboardIn.readLineInt();
 		System.out.print("Maximum CPU Burst?  ");
-		int MAX_BURST = SavitchIn.readLineInt();
+		int MAX_BURST = KeyboardIn.readLineInt();
 		System.out.print("Simulation Time?  ");
-		int SIM_TIME = SavitchIn.readLineInt();
+		int SIM_TIME = KeyboardIn.readLineInt();
 		System.out.print("Average Arrival Time?  ");
-		int AVG_ARRIVAL_TIME = SavitchIn.readLineInt();
+		int AVG_ARRIVAL_TIME = KeyboardIn.readLineInt();
 //		System.out.print("Time Slice?  ");
-//		int SLICE_TIME = SavitchIn.readLineInt();
+//		int SLICE_TIME = KeyboardIn.readLineInt();
 		System.out.print("Output File?  ");
-		String OUTPUT_FILE = SavitchIn.readLineWord();
+		String OUTPUT_FILE = KeyboardIn.readLineWord();
 		
 		int process = 0;
 		int arrival, priority, burst;

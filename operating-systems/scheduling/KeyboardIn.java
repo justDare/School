@@ -358,7 +358,7 @@ public class KeyboardIn
             if (next != '\n')
             {
                 System.out.println(
-                    "Fatal Error in method readWord of class SavitchIn.");
+                    "Fatal Error in method readWord of class KeyboardIn.");
                 System.exit(1);
             }
         }
