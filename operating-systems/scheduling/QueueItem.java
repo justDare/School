@@ -33,6 +33,14 @@ public class QueueItem
 		return next;
 	}
 
+	public boolean hasNext()
+	{
+		if(next == null)
+			return false;
+		else
+			return true;
+	}
+
 	public void setPrev(QueueItem prev)
 	{
 		this.prev = prev;

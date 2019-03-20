@@ -119,7 +119,7 @@ public class FCFSsample {
 
                 // update totals
                 totalTurnAround += turnAround[processNum];
-                totalWait += waitTime[processNum];b
+                totalWait += waitTime[processNum];
                 processCount += 1;
 
                 // once minute is up, print stats and reset counter
@@ -134,7 +134,6 @@ public class FCFSsample {
                     System.out.println();
 
                     oneMinute = oneMinute - 60000;
-                   
 
                     // reset totals
                     totalTurnAround = 0;

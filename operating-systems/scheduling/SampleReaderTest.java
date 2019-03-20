@@ -30,12 +30,11 @@ public class SampleReaderTest
 				break;
 			burst = sr.readBurst();
 			if (burst < 0)
-				break;
+				break; 
 
 			pcb = new ProcessControlBlock(process, arrival, priority, burst);
-			readyQ.putQueue(pcb, burst);
+			readyQ.putQueue(pcb, arrival);
 				
-//			System.out.println(process + "  " + arrival + "  " + priority + "  " + burst);
 		}
 
 		while(!readyQ.isEmpty()) {
